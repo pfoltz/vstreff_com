@@ -1,0 +1,3 @@
+
+var blockedReferrer = 'blockedReferrer';
+NS_ActualWrite=document.write;

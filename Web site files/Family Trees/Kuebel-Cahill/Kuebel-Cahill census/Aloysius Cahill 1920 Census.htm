@@ -1,0 +1,827 @@
+
+<html>
+ <head>
+  <title>
+  HeritageQuest Online
+   
+    Census Image
+   
+  </title>
+  
+  
+ 
+    
+
+
+			<!-- ZoneLabs Privacy Insertion -->
+			<script language='javascript' src='http://127.0.0.1:1032/js.cgi?aw&r=22929'></script>
+
+<SCRIPT language="JavaScript">
+function MM_swapImage() { 
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_swapImgRestore() { 
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { 
+ var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+   var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+   if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+ function setName(name) {
+    //alert("Setting window name to " + name);
+    window.name=name;
+  }
+</SCRIPT>
+
+
+    
+<!-- $Id: sub_globalnav.js,v 2.5 2002/04/30 20:26:29 vkulkarn Exp $ -->
+<!-- this text is all XML-escaped, because I want the
+     template engine to actually do substitions in it. -->
+<script language="JavaScript" xml:space="preserve">
+  function MM_swapImgRestore() { //v3.0
+    var i,x,a = document.MM_sr; 
+    for(i=0; a && i < a.length && (x=a[i]) && x.oSrc; i++) {
+      x.src = x.oSrc;
+    }
+  }
+  
+  function MM_preloadImages() { //v3.0
+    var d = document; 
+    if(d.images) {
+      if(!d.MM_p) d.MM_p = new Array();
+      var i,j = d.MM_p.length, a=MM_preloadImages.arguments; 
+      for(i=0; i < a.length; i++) {
+        if (a[i].indexOf("#")!=0) {
+          d.MM_p[j]=new Image; 
+          d.MM_p[j++].src=a[i];
+        }
+      }
+    }
+  }
+  
+  function MM_findObj(n, d) { //v3.0
+    var p,i,x;
+    if(!d) d=document;
+    if( (p=n.indexOf("?"))>0 && parent.frames.length) {
+      d=parent.frames[n.substring(p+1)].document;
+      n=n.substring(0,p);
+    }
+    if(!(x=d[n]) && d.all) x=d.all[n];
+    for (i=0;!x && i < d.forms.length;i++) {
+      x=d.forms[i][n];
+    }
+    for(i=0;!x && d.layers && i < d.layers.length;i++) {
+      x=MM_findObj(n,d.layers[i].document);
+    }
+    return x;
+  }
+  
+  function MM_swapImage() { //v3.0
+    var i,j=0,x,a=MM_swapImage.arguments; 
+    document.MM_sr=new Array;
+    for(i=0; i < (a.length-2); i+=3) {
+      if ((x=MM_findObj(a[i]))!=null) {
+        document.MM_sr[j++]=x;
+        if(!x.oSrc) x.oSrc=x.src;
+        x.src=a[i+2];
+      }
+    }
+  }
+
+  function popUp(nameOfpage, anchor) {
+    var location = "http://www.heritagequestonline.com/prod/genealogy/html" +
+                   "/help/" + nameOfpage + ".html";
+    if (anchor != null && anchor != "") {
+      location = location + "#" + anchor;
+    }
+    var newwin = window.open(
+      location,
+      "GenealogyHelp",
+      "toolbar=no,menubar=no,scrollbars=yes,status=no,width=550,height=500, resizable=yes");
+    if (newwin != null && newwin.opener == null) {
+      //alert("Opening help window...");
+      newwin.opener = self;
+    }
+  }
+  
+  function gcPopUpHelp(gcHelpUrl) {
+    var newwin = window.open(
+    	gcHelpUrl,
+		"GenealogyHelp",
+		"toolbar=no,menubar=no,scrollbars=yes,status=no,width=770,height=640, resizable=yes");
+    if (newwin != null && newwin.opener == null) {
+      //alert("Opening help window...");
+      newwin.opener = self;
+    }
+  }
+
+  function setName(name) {
+    //alert("Setting window name to " + name);
+    window.name=name;
+  }
+  
+  var windowHandle = '';
+
+  function myOpen(url,name,attributes) {
+    	windowHandle = window.open(url,name,attributes);
+  }
+ 
+								
+							
+</script>
+ 
+
+  
+   
+<!-- this text is all XML-escaped, because I want the
+     template engine to actually do substitions in it. -->
+<script language="Javascript" xml:space="preserve">
+  function markCite(cite, source) {
+   document.location.href = "mark?docID=" + cite + "&action=add" + "&source=" + source;
+  }
+ 
+  function unmarkCite(cite, source) {
+   document.location.href = "mark?docID=" + cite + "&action=remove" + "&source=" + source;
+  }
+ 
+  function toggleMark(checker, cite, source, hasNotes) {
+   if (checker.checked==true) {
+    //alert("Box was checked, adding");
+    markCite(cite, source);
+   } else {
+    //alert("Box was unchecked, deleting");
+    if (!hasNotes)
+    {
+     unmarkCite(cite, source);
+    }
+    else if (hasNotes && confirm("Removing a title from your notebook will\n" +
+                                         "remove any notes you may have taken.\n" +
+                                         "Are you sure this is what you want?\n") )
+    {
+     unmarkCite(cite, source);
+    } else {
+     checker.checked = true;
+    }
+   }
+  }
+ 
+
+  //
+  // Mark everything on the list
+  //
+  function markAll(formObj, source) {
+    var newloc = "mark?docID=all&action=add" + "&source=" + source;
+    //alert("Mark All was pressed. Marking all");
+
+    // have to subtract 0 to convert these to numbers
+    numhits = formObj.numberOfHits.value - 0;
+    maxallowed = formObj.maxAllowedForMarking.value - 0;
+    if (numhits > maxallowed) {
+      alert("This query matched over " + maxallowed + " hits (the maximum size of\n" +
+            "your Notebook).  Upto the first " + maxallowed + " results will be added.");
+    }
+    toggleCheckBoxes(formObj, true);
+    document.location.href = newloc;
+  }
+ 
+  function unmarkAll(formObj, source) {
+   var newloc = "mark?docID=all&action=remove" + "&source=" + source +
+                 "&return=" + document.location.href;
+   if ( confirm("Clearing your notebook will remove all notes that you may have taken.\n" +
+                "Are you sure this is what you want?\n") )
+   {
+    document.location.href = newloc;
+   }
+  }
+ 
+  function toggleCheckBoxes(formObj, flag) {
+   var i;
+   for(i = 0; i < formObj.elements.length; i++) {
+    el = formObj.elements[i];
+    // toggle the state
+    if (el.name.indexOf('docID') != -1) {
+     el.checked = flag;
+    }
+   }
+  }
+</script>
+
+   
+<!-- this text is all XML-escaped, because I want the
+     template engine to actually do substitions in it. -->
+<script language="Javascript" xml:space="preserve">
+  function notesPopUp(docID, source, uniquifier) {
+    var newwin = window.open(
+      "notes?docID=" + docID + "&source=" + source,
+      "GenealogyNotepad" + uniquifier,
+      "toolbar=no,menubar=no,scrollbars=yes,status=no,width=455,height=530");
+    if (newwin != null && newwin.opener == null)
+    {
+      //alert("Opening notepad...");
+      newwin.opener = self;
+    }
+  }
+</script>
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+
+  
+  
+  
+
+  
+     
+<script language="Javascript" xml:space="preserve">
+	function changeImageParameters(imageSize) {
+		var currentImageUrl = imageSize.options[imageSize.selectedIndex].value;
+		var indexOfScale = currentImageUrl.indexOf("scale=");
+		var baseImageUrl = "";
+		var endOfImageUrl = "";
+		if(indexOfScale > -1) {
+			baseImageUrl = currentImageUrl.substring(0, indexOfScale);
+			endOfImageUrl = currentImageUrl.substring(indexOfScale + 7, currentImageUrl.length);
+		} else {
+		 	baseImageUrl = currentImageUrl;
+		}
+		var scale = "&scale=";
+	
+		if(imageSize.selectedIndex == 0) {
+			scale += "4";
+		} else if(imageSize.selectedIndex == 1) {
+			scale += "2";
+		} else {
+			scale += "1";
+		}
+		top.location.href = baseImageUrl + endOfImageUrl + scale;
+	}
+	function imagePageOnLoad() {
+		var form = document.imagePageForm;
+		var selectImage = form.selectImageSize;
+	
+                if (selectImage  == null) 
+                     return;
+
+		var currentImageUrl = selectImage.options[selectImage.selectedIndex].value;
+		if(currentImageUrl != null && currentImageUrl.length > 0) {
+		 	var indexOfScale = currentImageUrl.indexOf("scale=");
+		 	var currentScale = "2";
+	
+		 	if(indexOfScale > -1) {
+			 	currentScale = currentImageUrl.substring(indexOfScale + 6, indexOfScale + 7);
+		 	}
+	
+		 	switch(currentScale) {
+				case "4": {
+			   		selectImage.options[0].selected = true;
+			   		break;
+				} case "1": {
+			   		selectImage.options[2].selected = true;
+			   		break;
+				} default : {
+			   		selectImage.options[1].selected = true;
+			   		break;
+				}
+		 	}
+		}
+	}
+</script>
+
+     
+<!-- this text is all XML-escaped, because I want the
+     template engine to actually do substitions in it. -->
+<script language="Javascript" xml:space="preserve">
+
+  function printCensusPopUp(imageUrl, source) {
+    var newwin = window.open(
+      "http://www.heritagequestonline.com/prod/genealogy" + "/printcensusimage?" + "source=" + source + "&imageurl=" + imageUrl,
+      "CensusImagePrint212","toolbar=yes,menubar=yes,scrollbars=yes,status=yes,height=550,width=650,resizable=yes");
+    if (newwin != null && newwin.opener == null)
+    {
+      //alert("Opening help window...");
+      newwin.opener = self;
+    }
+  }
+</script>
+
+     
+<SCRIPT language="JavaScript">
+<!--
+
+/*
+The CensusAttributes object is used for inserting the T132 census series
+as part of the M593 series and increasing its rolls by 2000.  The javascript object
+takes a series and a roll and determines whether the series is supposed to be
+T132, and it computes the roll accordingly.  It has a function that returns the 
+series to be displayed and a function that returns a roll to be displayed.
+*/
+
+function CensusAttributes(aSeries, aRoll) {
+    
+    if( ((aSeries.indexOf("M593") > -1) || (aSeries.indexOf("m593") > -1)) && (aRoll > 2000) ){
+
+		this.series = "T132";
+		this.roll = aRoll - 2000;
+			
+	} else {
+
+		this.series = aSeries;
+		this.roll = aRoll;		
+	}
+	
+	this.displaySeries = CensusAttributes_DisplaySeries;
+	this.displayRoll = CensusAttributes_DisplayRoll;
+}
+
+function CensusAttributes_DisplaySeries(){
+
+	return this.series;
+}
+
+function CensusAttributes_DisplayRoll(){
+
+	return this.roll;
+}
+
+// -->
+</SCRIPT>
+  
+  
+  
+</head>
+   
+     <body text="#000000" link="#000099" vlink="#666633" alink="#cc0000" bgcolor="#ffffff" onLoad="setName('mainGLHOnline'); imagePageOnLoad();">
+
+    <table border="0" cellspacing="0" cellpadding="0" align="left">
+
+   
+   
+   
+   	  <!-- include census content -->
+   	  
+
+<table border="0" cellpadding="0" cellspacing="0" width="756">
+  <tr>
+    <td colspan="1" rowspan="1"><table border="0" cellpadding="0" cellspacing="0" width="756">
+	  <tr>
+	   <td colspan="1" rowspan="1"><table border="0" cellpadding="0" cellspacing="0" width="125">
+		  <tr>
+		   <td colspan="1" rowspan="1"><IMG src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/dot_black.gif" width="125" height="3" border="0"></td>
+		  </tr>
+		  <tr>
+		   <td colspan="1" rowspan="1"><table border="0" cellpadding="0" cellspacing="0" width="125">
+			  <tr>
+			  		  <td colspan="1" rowspan="1"><A href="http://www.heritagequestonline.com/prod/genealogy/searchbasic" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('topArrow','','http://www.heritagequestonline.com/prod/genealogy/images/navbar/topArrow_f2.gif','search_button','','http://www.heritagequestonline.com/prod/genealogy/images/navbar/search_button_f2.gif',1)"><IMG name="topArrow" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/topArrow.gif" width="23" height="17" border="0"></A></td>
+			          <td colspan="1" rowspan="1"><A href="http://www.heritagequestonline.com/prod/genealogy/searchbasic" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('topArrow','','http://www.heritagequestonline.com/prod/genealogy/images/navbar/topArrow_f2.gif','search_button','','http://www.heritagequestonline.com/prod/genealogy/images/navbar/search_button_f2.gif',1)"><img name="search_button" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/search_button.gif" width="102" height="17" border="0" alt="Search"></A></td>
+			  </tr>
+			</table></td>
+		  </tr>
+		  <tr>
+		   <td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/dot_black.gif" width="125" height="2" border="0"></td>
+		  </tr>
+		  <tr>
+		   <td colspan="1" rowspan="1"><table border="0" cellpadding="0" cellspacing="0" width="125">
+			  <tr>
+			          <td colspan="1" rowspan="1"><A href="http://www.heritagequestonline.com/prod/genealogy/browsecensus" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('botArrow','','http://www.heritagequestonline.com/prod/genealogy/images/navbar/botArrow_f2.gif','browse_button','','http://www.heritagequestonline.com/prod/genealogy/images/navbar/browse_button_f2.gif',1)"><img name="botArrow" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/botArrow.gif" width="23" height="17" border="0"></A></td>
+			          <td colspan="1" rowspan="1"><A href="http://www.heritagequestonline.com/prod/genealogy/browsecensus" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('botArrow','','http://www.heritagequestonline.com/prod/genealogy/images/navbar/botArrow_f2.gif','browse_button','','http://www.heritagequestonline.com/prod/genealogy/images/navbar/browse_button_f2.gif',1)"><img name="browse_button" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/browse_button.gif" width="102" height="17" border="0" alt="Browse"></A></td>
+			  </tr>
+			</table></td>
+		  </tr>
+		  <tr>
+		   <td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/dot_black.gif" width="125" height="5" border="0"></td>
+		  </tr>
+		  <tr>
+		   <td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/dot_black.gif" width="125" height="16" border="0"></td>
+		  </tr>
+		</table></td>
+	   <td colspan="1" rowspan="1"><img name="slice2" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/slice2.gif" width="6" height="60" border="0"></td>
+	   <td colspan="1" rowspan="1"><table border="0" cellpadding="0" cellspacing="0" width="430">
+		  <tr>
+		        <td colspan="1" rowspan="1"><A href="http://www.heritagequestonline.com/prod/genealogy/index"><img name="heritagequest_online" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/heritagequest_online.jpg" width="430" height="44" border="0" alt="Heritage Quest Online"></A></td>
+		  </tr>
+		  <tr>
+		   <td colspan="1" rowspan="1"><table border="0" cellpadding="0" cellspacing="0" width="430">
+			  <tr>
+			          <td colspan="1" rowspan="1"><A href="http://www.heritagequestonline.com/prod/genealogy/censuscounts?sur-name=cahill&amp;expand-state-id=22&amp;state-id=22&amp;expand-year-id=14&amp;state-hit-count=28&amp;series-id=14&amp;series-year=1920&amp;series-hit-count=28&amp;state-name=Louisiana" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('resultslist_button','','http://www.heritagequestonline.com/prod/genealogy/images/navbar/resultslist_button_f2.gif',1);"><img name="resultslist_button" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/resultslist_button.gif" width="91" height="16" border="0" alt="Results List"></A></td>
+			   <td colspan="1" rowspan="1"><img name="pike2" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/pike2.gif" width="14" height="16" border="0"></td>
+			          <td colspan="1" rowspan="1"><A href="http://www.heritagequestonline.com/prod/genealogy/notebook" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('notebook_button','','http://www.heritagequestonline.com/prod/genealogy/images/navbar/notebook_button_f2.gif',1);"><img name="notebook_button" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/notebook_button.gif" width="70" height="16" border="0" alt="Notebook"></A></td>
+			   <td colspan="1" rowspan="1"><img name="pike3" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/pike3.gif" width="23" height="16" border="0"></td>
+			          <td colspan="1" rowspan="1"><A href="http://www.heritagequestonline.com/prod/genealogy/censusHistory" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('searchhistory_button','','http://www.heritagequestonline.com/prod/genealogy/images/navbar/searchhistory_button_f2.gif',1);"><img name="searchhistory_button" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/searchhistory_button.gif" width="105" height="16" border="0" alt="Search History"></A></td>
+			   <td colspan="1" rowspan="1"><img name="pike" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/pike.gif" width="16" height="16" border="0"></td>
+			          <td colspan="1" rowspan="1"><A href="javascript:popUp('image_census');" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('help_button','','http://www.heritagequestonline.com/prod/genealogy/images/navbar/help_button_f2.gif',1);"><img name="help_button" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/help_button.gif" width="42" height="16" border="0" alt="Help"></A></td>
+			   <td colspan="1" rowspan="1"><img name="pike4" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/pike4.gif" width="18" height="16" border="0"></td>
+			          <td colspan="1" rowspan="1"><A href="http://www.heritagequestonline.com/prod/genealogy/index" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('home_button','','http://www.heritagequestonline.com/prod/genealogy/images/navbar/home_button_f2.gif',1);"><img name="home_button" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/home_button.gif" width="41" height="16" border="0" alt="Home"></A></td>
+			   <td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/dot_black.gif" width="10" height="16" border="0"></td>
+			  </tr>
+			</table></td>
+		  </tr>
+		</table></td>
+	   <td colspan="1" rowspan="1"><table border="0" cellpadding="0" cellspacing="0" width="59">
+		  <tr>
+		        <td colspan="1" rowspan="1"><A href="http://www.heritagequestonline.com/prod/genealogy/index"><img name="h" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/h.gif" width="59" height="44" border="0" alt="Home"></A></td>
+		  </tr>
+		  <tr>
+		   <td colspan="1" rowspan="1"><img name="divot" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/divot.gif" width="59" height="16" border="0"></td>
+		  </tr>
+		</table></td>
+	   <td colspan="1" rowspan="1"><table border="0" cellpadding="0" cellspacing="0" width="136">
+		  <tr>
+		        <td colspan="1" rowspan="1"><A href="http://www.umi.com/"><img name="from_proquest" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/from_proquest.gif" width="136" height="44" border="0" alt="From: ProQuest"></A></td>
+		  </tr>
+		  <tr>
+		   
+			<td colspan="1" rowspan="1"><A href="http://www.heritagequestonline.com/prod/genealogy/books" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('tobooks_button','','http://www.heritagequestonline.com/prod/genealogy/images/navbar/banner_books_on.gif',1);"><img name="tobooks_button" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/banner_books_off.gif" width="136" height="16" border="0" alt="To Books"></A></td>
+		     
+		  </tr>
+		</table></td>
+	  </tr>
+	</table></td>
+  </tr>
+  <tr>
+   <td colspan="1" rowspan="1"><img name="bottomspan" src="http://www.heritagequestonline.com/prod/genealogy/images/navbar/bottomspan.gif" width="756" height="2" border="0"></td>
+  </tr>
+</table>
+
+
+
+
+
+
+   
+   
+   
+
+
+   <tr align="left" valign="top">
+    <td colspan="1" rowspan="1">
+     
+      
+<!-- main page table START -->
+
+<table border="0" cellspacing="0" cellpadding="0">
+
+<form name="imagePageForm" enctype="application/x-www-form-urlencoded" method="get">
+
+<!-- ROW 1: 1 px white space and header row -->
+<tr> 
+	<td colspan="1" rowspan="1">
+
+	<table border="0" cellspacing="0" cellpadding="0" width="756">
+	<!-- 1 px row of white space -->
+	<tr>
+		<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="170" height="1" border="0"></td>
+		<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="414" height="1" border="0"></td>
+		<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="95" height="1" border="0"></td>
+		<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="77" height="1" border="0"></td>
+	</tr>
+
+	<!-- header row -->
+	<tr valign="top">
+		<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/headers/census_image_h.gif" alt="Census Image" width="170" height="60" border="0"></td>
+		<td colspan="1" rowspan="1">&nbsp;</td>
+		<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="2" height="25" border="0"><br clear="none">
+		<a href="http://www.heritagequestonline.com/prod/genealogy/censusindex?county-id=692&amp;hit-count=24&amp;state-id=22&amp;series-id=14&amp;l-offset=1&amp;sur-name=cahill" shape="rect"><img src="http://www.heritagequestonline.com/prod/genealogy/images/buttons/back_to_census_results_butt.gif" alt="Back to Census Results" width="95" height="35" border="0"></a>
+		</td>
+		<td colspan="1" rowspan="1">&nbsp;</td>
+	</tr>
+	</table>
+
+	</td>
+</tr>
+
+
+<!-- ROW 2: main content -->
+<tr>
+	<td colspan="1" rowspan="1">
+	<table border="0" cellspacing="0" cellpadding="0" width="756">
+	<!-- 1 px row of white space -->
+	<tr>
+		<!-- indent (4 px) -->
+		<td width="4" rowspan="4" colspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="4" height="2" border="0"></td>
+
+
+		<td width="752" colspan="1" rowspan="1">
+		<table border="0" cellspacing="0" cellpadding="3" width="752">
+		<tr>
+			<td colspan="1" rowspan="1">
+			
+			<font size="+0" face="arial,helvetica,verdana">
+			    <a href="http://www.heritagequestonline.com/prod/genealogy/browsecensus?series-id=14" shape="rect">
+			        1920
+			    </a>&nbsp;&nbsp;<font color="#ff0000">&gt;</font>&nbsp;&nbsp;
+			    <a href="http://www.heritagequestonline.com/prod/genealogy/browsecensus?series-id=14&amp;state-id=22" shape="rect">
+			        Louisiana
+			    </a>&nbsp;&nbsp;<font color="#ff0000">&gt;</font>&nbsp;&nbsp;
+			    <a href="http://www.heritagequestonline.com/prod/genealogy/browsecensus?series-id=14&amp;state-id=22&amp;county-id=692" shape="rect">
+			        ORLEANS
+			    </a>&nbsp;&nbsp;<font color="#ff0000">&gt;</font>&nbsp;&nbsp;
+			    <a href="http://www.heritagequestonline.com/prod/genealogy/browsecensus?series-id=14&amp;state-id=22&amp;county-id=692&amp;locality-id=139515" shape="rect">
+					12 WD; 7-PCT; NEW ORLEANS
+				</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<script language="javascript" xml:space="preserve">
+					var censusAttributes = new CensusAttributes( "T625", 623 );
+					document.write("Series: " + censusAttributes.displaySeries() + "  ");
+					document.write("Roll: " + censusAttributes.displayRoll() + "  ");
+				</script>
+		        Page: 212&nbsp;&nbsp;
+			</font>
+			
+			</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	
+	<!-- horizontal line -->
+	<tr>
+		<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="2" height="1" border="0"></td>
+	</tr>
+
+
+	<tr>
+		<td colspan="1" rowspan="1">
+			<table border="0" cellspacing="0" cellpadding="0" width="752">
+				<tr>
+					<!-- indent: 3 px -->
+					<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="3" height="2" border="0"></td>
+					<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="113" height="2" border="0"></td>
+					<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="10" height="2" border="0"></td>
+					<td align="center" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/headings/surname.gif" alt="Surname" width="84" height="20" border="0"></td>
+					<td align="center" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/headings/given_name.gif" alt="Given Name" width="72" height="20" border="0"></td>
+					<td align="center" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/headings/age.gif" alt="Age" width="32" height="20" border="0"></td>
+					<td align="center" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/headings/sex.gif" alt="Sex" width="30" height="20" border="0"></td>
+					<td align="center" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/headings/race.gif" alt="Race" width="40" height="20" border="0"></td>
+					<td align="center" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/headings/birthplace.gif" alt="Birthplace" width="54" height="20" border="0"></td>
+					<td align="center" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/headings/state.gif" alt="State" width="50" height="20" border="0"></td>
+					<td align="left" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/headings/county.gif" alt="County" width="76" height="20" border="0"></td>
+					<td align="center" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/headings/location.gif" alt="Location" width="109" height="20" border="0"></td>
+					<td align="center" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/headings/year.gif" alt="Year" width="57" height="20" border="0"></td>
+					<td align="center" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="25" height="2" border="0"></td>
+				</tr>
+		
+				<!-- horizontal line -->
+				<tr>
+					<td colspan="14" bgcolor="#cccc99" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="2" height="1" border="0"></td>
+				</tr>
+		
+				<!-- vertical spacing (6 px) -->
+				<tr bgcolor="#ffffcc">
+					<td colspan="14" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="2" height="6" border="0"></td>
+				</tr>
+		
+				<tr bgcolor="#ffffcc" valign="top">
+			    	<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="3" height="2" border="0"></td>
+			    	<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="113" height="2" border="0"></td>
+			    	<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="10" height="2" border="0"></td>	
+		 			<td align="left" colspan="1" rowspan="1"><font size="-2" face="arial,helvetica,verdana">CAHILL</font>&nbsp;</td>
+		    		<td align="left" colspan="1" rowspan="1"><font size="-2" face="arial,helvetica,verdana">ALOYSIUS J </font>&nbsp;</td>
+		    		<td align="center" colspan="1" rowspan="1"><font size="-2" face="arial,helvetica,verdana">50</font>&nbsp;</td>
+		    		<td align="center" colspan="1" rowspan="1"><font size="-2" face="arial,helvetica,verdana">M</font>&nbsp;</td>
+		    		<td align="center" colspan="1" rowspan="1"><font size="-2" face="arial,helvetica,verdana">W</font>&nbsp;</td>
+		    		<td align="center" colspan="1" rowspan="1"><font size="-2" face="arial,helvetica,verdana">LA</font>&nbsp;</td>
+				    <td align="center" colspan="1" rowspan="1"><font size="-2" face="arial,helvetica,verdana">LA</font>&nbsp;</td>
+				    <td align="left" colspan="1" rowspan="1"><font size="-2" face="arial,helvetica,verdana">ORLEANS</font>&nbsp;</td>
+				    <td align="left" colspan="1" rowspan="1"><font size="-2" face="arial,helvetica,verdana">12 WD; 7-PCT; NEW ORLEANS</font>&nbsp;</td>
+				    <td align="left" colspan="1" rowspan="1"><font size="-2" face="arial,helvetica,verdana">1920</font>&nbsp;</td>
+				    <td align="center" colspan="1" rowspan="1"><font size="-2" face="arial,helvetica,verdana"></font>&nbsp;</td>
+			    </tr>
+		
+		    	<!-- 1 px height spanning white line -->
+			    <tr>	
+					<td colspan="15" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="2" height="1" border="0"></td>
+				</tr>
+		    	
+				<!-- vertical spacing (7 px) -->
+				<tr bgcolor="#ffffcc">
+					<td colspan="14" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="2" height="7" border="0"></td>
+				</tr>
+		
+				<!-- Checkbox -->
+				<tr bgcolor="#ffffcc">
+					<td colspan="14" rowspan="1"><font size="-1" face="arial,helvetica,verdana" color="#999966">
+ <a href="javascript:notesPopUp('65612139-14-22', 'census', '');" shape="rect">Take notes</a>
+						
+			               	<input type="checkbox" name="docID65612139" value="65612139" onClick="toggleMark(this,'65612139-14-22','census','false');" checked>
+			            
+			            <b>Add to Notebook</b></font>
+		            </td>
+				</tr>		            
+		
+				<!-- vertical spacing (6 px) -->
+				<tr bgcolor="#ffffcc">
+					<td colspan="14" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="2" height="6" border="0"></td>
+				</tr>
+				
+				<!-- horizontal line -->
+				<tr>
+					<td colspan="14" bgcolor="#cccc99" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="2" height="1" border="0"></td>
+				</tr>
+			</table>
+        </td>
+	</tr>
+
+
+	<tr>
+		<td colspan="1" rowspan="1">
+		<table border="0" cellspacing="0" cellpadding="0" width="752">
+		<!-- vertical spacing and column definition -->
+		<tr>
+			<!-- indent (3 px) and vertical spacing (11 px) -->
+			<td width="3" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="3" height="11" border="0"></td>
+			<td width="313" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="2" height="2" border="0"></td>
+			<td width="132" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="2" height="2" border="0"></td>
+			<td width="304" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="2" height="2" border="0"></td>
+		</tr>
+
+		<tr>
+			<!-- indent: 3 px -->
+			<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="3" height="2" border="0"></td>
+			<td colspan="1" rowspan="1">
+				<a href="javascript:printCensusPopUp( '/dvimage/genealogy/stage/dvimage?filename=/heritage/vault/hqc24/T625/623/2/212A.tif&amp;scale=2', 'searchcensus');" shape="rect"><img src="http://www.heritagequestonline.com/prod/genealogy/images/buttons/print_butt.gif" alt="PRINT" width="104" height="16" border="0">
+				</a>
+			</td>
+			<td colspan="1" rowspan="1">
+				<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/zoom.gif" alt="ZOOM" width="40" height="17" border="0"></td>
+					<td colspan="1" rowspan="1">&nbsp;</td>
+					<td colspan="1" rowspan="1">
+						<select name="selectImageSize" onchange="changeImageParameters(this.form.selectImageSize);">
+								<option value="http://www.heritagequestonline.com/prod/genealogy/censusindeximagepage?current-image-url=/dvimage/genealogy/stage/dvimage?filename=/heritage/vault/hqc24/T625/623/2/212A.tif&amp;scale=2&amp;l-sur-name=cahill&amp;l-county-id=692&amp;l-hit-count=24&amp;l-state-id=22&amp;l-series-id=14&amp;l-offset=1&amp;polarity-tab=0">100%</option>
+								<option value="http://www.heritagequestonline.com/prod/genealogy/censusindeximagepage?current-image-url=/dvimage/genealogy/stage/dvimage?filename=/heritage/vault/hqc24/T625/623/2/212A.tif&amp;scale=2&amp;l-sur-name=cahill&amp;l-county-id=692&amp;l-hit-count=24&amp;l-state-id=22&amp;l-series-id=14&amp;l-offset=1&amp;polarity-tab=0">200%</option>
+								<option value="http://www.heritagequestonline.com/prod/genealogy/censusindeximagepage?current-image-url=/dvimage/genealogy/stage/dvimage?filename=/heritage/vault/hqc24/T625/623/2/212A.tif&amp;scale=2&amp;l-sur-name=cahill&amp;l-county-id=692&amp;l-hit-count=24&amp;l-state-id=22&amp;l-series-id=14&amp;l-offset=1&amp;polarity-tab=0">400%</option>
+						</select>
+					</td>
+				</tr>
+				</table>
+			</td>
+			
+			<td align="right" colspan="1" rowspan="1">
+			<table border="0" cellspacing="0" cellpadding="0">
+			<tr>
+			    <!-- ADD 'PREVIOUS' BUTTON -->
+			    
+				    <td colspan="1" rowspan="1"><a href="http://www.heritagequestonline.com/prod/genealogy/censusphysicalimagepage?l-sur-name=cahill&amp;l-county-id=692&amp;l-hit-count=24&amp;l-state-id=22&amp;l-series-id=14&amp;l-offset=1&amp;thread-type=physical&amp;direction=prev" shape="rect"><img src="http://www.heritagequestonline.com/prod/genealogy/images/buttons/arrow_left_green.gif" alt="PREVIOUS" width="13" height="16" border="0" name="PREVIOUSPAGE"></a></td>
+				    
+				
+				<!-- ADD 'THREAD TYPE' IMAGE -->
+			    <td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/buttons/page_butt_green.gif" alt="PAGE" width="85" height="16" border="0"></td>
+				
+				<!-- ADD 'NEXT' BUTTON -->
+			    
+				    <td colspan="1" rowspan="1"><a href="http://www.heritagequestonline.com/prod/genealogy/censusphysicalimagepage?l-sur-name=cahill&amp;l-county-id=692&amp;l-hit-count=24&amp;l-state-id=22&amp;l-series-id=14&amp;l-offset=1&amp;thread-type=physical&amp;direction=next" shape="rect"><img src="http://www.heritagequestonline.com/prod/genealogy/images/buttons/arrow_right_green.gif" alt="NEXT" width="13" height="16" border="0" name="NEXTPAGE"></a></td>
+				    
+			</tr>
+			</table>
+			</td>
+		</tr>
+
+		<!-- vertical spacing (7 px) -->
+		<tr>
+			<td colspan="4" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="2" height="7" border="0"></td>
+		</tr>
+
+		<tr>
+			<!-- indent: 3 px -->
+			<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="3" height="2" border="0"></td>
+
+			<td colspan="2" rowspan="1">
+				<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+                                   <td colspan="1" rowspan="1"><a href="http://www.heritagequestonline.com/prod/genealogy/censusdownload?source=census&amp;imageurl=/dvimage/genealogy/stage/dvimage?filename=/heritage/vault/hqc24/T625/623/2/212A.tif&amp;scale=2" shape="rect"><img src="http://www.heritagequestonline.com/prod/genealogy/images/buttons/download_button.gif" alt="DOWNLOAD" border="0"></a></td>
+
+				</tr>
+				</table>
+			</td>
+			
+			<td align="right" colspan="1" rowspan="1">
+			<table border="0" cellspacing="0" cellpadding="0">
+			<tr>
+			    <!-- ADD 'PREVIOUS' BUTTON -->
+			    
+				    <td colspan="1" rowspan="1"><a href="http://www.heritagequestonline.com/prod/genealogy/censusindeximagepage?l-sur-name=cahill&amp;l-county-id=692&amp;l-hit-count=24&amp;l-state-id=22&amp;l-series-id=14&amp;l-offset=1&amp;thread-type=logical&amp;direction=prev" shape="rect"><img src="http://www.heritagequestonline.com/prod/genealogy/images/buttons/arrow_left_green.gif" alt="PREVIOUS" width="13" height="16" border="0" name="PREVIOUSNAME"></a></td>
+					
+				
+				
+				<!-- ADD 'THREAD TYPE' IMAGE -->
+			    <td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/buttons/name_butt_green.gif" alt="NAME" width="85" height="16" border="0"></td>
+				
+				<!-- ADD 'NEXT' BUTTON -->
+			    
+				    <td colspan="1" rowspan="1"><a href="http://www.heritagequestonline.com/prod/genealogy/censusindeximagepage?l-sur-name=cahill&amp;l-county-id=692&amp;l-hit-count=24&amp;l-state-id=22&amp;l-series-id=14&amp;l-offset=1&amp;thread-type=logical&amp;direction=next" shape="rect"><img src="http://www.heritagequestonline.com/prod/genealogy/images/buttons/arrow_right_green.gif" alt="NEXT" width="13" height="16" border="0" name="NEXTNAME"></a></td>
+				    
+			</tr>
+			</table>
+			</td>
+		</tr>
+
+		<!-- vertical spacing (18 px) -->
+		<tr>
+			<td colspan="4" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="2" height="18" border="0"></td>
+		</tr>
+	
+		</table>
+		</td>
+
+	</tr>
+	</table>
+	</td>
+</tr>
+
+</form>
+</table>
+<!-- main page table END -->
+
+
+<!-- top of image START -->
+<table border="0" cellspacing="0" cellpadding="0" width="756">
+<!-- 1 px row of white space -->
+<tr valign="top">
+	<!-- indent (4 px) -->
+	<td width="4" rowspan="2" colspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="4" height="2" border="0"></td>
+	<!-- positive/negative tabs -->
+	
+		<td width="165" background="http://www.heritagequestonline.com/prod/genealogy/images/image_tabs_bg.gif" colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/image_tabs_positive.gif" alt="positive tab" width="165" height="20" border="0" usemap="#image_tabs"></td>
+	
+
+	<!-- paging -->
+	<td width="587" align="right" background="http://www.heritagequestonline.com/prod/genealogy/images/image_tabs_bg.gif" colspan="1" rowspan="1">
+	<table border="0" cellspacing="0" cellpadding="0">
+	
+		<tr>
+			<td colspan="1" rowspan="1"><font size="-2" face="arial,helvetica,verdana">The Name that you have found is on 1 of 2 pages.</font></td>
+		    
+				<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="5" height="2" border="0"></td>
+				
+				
+					<td background="http://www.heritagequestonline.com/prod/genealogy/images/buttons/box_green.gif" width="14" height="17" align="center" colspan="1" rowspan="1"><font face="arial, helvetica, verdana, sans" size="-1"><a href="http://www.heritagequestonline.com/prod/genealogy/censusindeximagepage?current-image-url=/dvimage/genealogy/stage/dvimage?filename=/heritage/vault/hqc24/T625/623/2/212A.tif&amp;mimeType=image/gif&amp;&amp;l-sur-name=cahill&amp;l-county-id=692&amp;l-hit-count=24&amp;l-state-id=22&amp;l-series-id=14&amp;l-offset=1" shape="rect">A</a></font></td>
+				
+		    
+				<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="5" height="2" border="0"></td>
+				
+				
+					<td background="http://www.heritagequestonline.com/prod/genealogy/images/buttons/box_white.gif" width="14" height="17" align="center" colspan="1" rowspan="1"><font face="arial, helvetica, verdana, sans" size="-1"><a href="http://www.heritagequestonline.com/prod/genealogy/censusindeximagepage?current-image-url=/dvimage/genealogy/stage/dvimage?filename=/heritage/vault/hqc24/T625/623/2/212B.tif&amp;mimeType=image/gif&amp;&amp;l-sur-name=cahill&amp;l-county-id=692&amp;l-hit-count=24&amp;l-state-id=22&amp;l-series-id=14&amp;l-offset=1" shape="rect">B</a></font></td>
+				
+				
+		    
+		</tr>
+	
+	</table>
+	</td>
+</tr>
+
+<map name="image_tabs">
+	<area shape="rect" coords="0,0,76,20" href="http://www.heritagequestonline.com/prod/genealogy/censusindeximagepage?l-sur-name=cahill&amp;l-county-id=692&amp;l-hit-count=24&amp;l-state-id=22&amp;l-series-id=14&amp;l-offset=1&amp;polarity-tab=0&amp;current-image-url=/dvimage/genealogy/stage/dvimage?filename=/heritage/vault/hqc24/T625/623/2/212A.tif&amp;scale=2" alt="POSITIVE">
+	<area shape="rect" coords="77,0,160,20" href="http://www.heritagequestonline.com/prod/genealogy/censusindeximagepage?l-sur-name=cahill&amp;l-county-id=692&amp;l-hit-count=24&amp;l-state-id=22&amp;l-series-id=14&amp;l-offset=1&amp;polarity-tab=1&amp;current-image-url=/dvimage/genealogy/stage/dvimage?filename=/heritage/vault/hqc24/T625/623/2/212A.tif&amp;scale=2" alt="NEGATIVE">
+</map>
+
+</table>
+<!-- top of image END -->
+
+
+<!-- image START -->
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+	<!-- indent: 3 px -->
+	<td colspan="1" rowspan="1"><img src="http://www.heritagequestonline.com/prod/genealogy/images/transparent.gif" width="3" height="2" border="0"></td>
+
+	<td colspan="1" rowspan="1"><img src="/dvimage/genealogy/stage/dvimage?filename=/heritage/vault/hqc24/T625/623/2/212A.tif&amp;scale=2" alt="census-image" border="0"></td>
+</tr>
+</table>
+
+     
+    </td>
+   </tr>
+
+  </table>
+
+ </body>
+</html>
+
+
+
+

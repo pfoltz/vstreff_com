@@ -1,0 +1,183 @@
+BODY {
+	FONT-SIZE: x-small; COLOR: #000000; FONT-FAMILY: arial,helvetica,sans-serif; BACKGROUND-COLOR: #ffffff
+}
+TD {
+	FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.familySearchTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: #003366; LINE-HEIGHT: 15pt; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+.inputLabel {
+	FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.inputLabelStrong {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.inputField {
+	FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.backToTop {
+	FONT-SIZE: x-small; FONT-STYLE: italic; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.docTitle {
+	FONT-SIZE: x-small; COLOR: #ffffff; FONT-FAMILY: arial,helvetica,sans-serif; LETTER-SPACING: 3pt
+}
+.bodyText {
+	FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.errorText {
+	FONT-SIZE: x-small; COLOR: #ff0000; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.headerText {
+	FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.resourceName {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.heading3 {
+	FONT-WEIGHT: bold; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.heading2 {
+	FONT-WEIGHT: bold; FONT-SIZE: large; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.heading1 {
+	FONT-WEIGHT: bold; FONT-SIZE: x-large; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.information {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; COLOR: #003366; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.smallText {
+	FONT-SIZE: xx-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.infoAnchor {
+	FONT-SIZE: x-small; COLOR: #003366; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A.infoAnchor {
+	COLOR: #003366; TEXT-DECORATION: none
+}
+A.infoAnchor:hover {
+	COLOR: #003366; TEXT-DECORATION: underline
+}
+A.featureTitleAnchor {
+	FONT-WEIGHT: bold; FONT-SIZE: medium; COLOR: #003366; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.featureTitleAnchor:hover {
+	COLOR: #003366; TEXT-DECORATION: underline
+}
+A.featureTitleAnchor:visited {
+	COLOR: #003366
+}
+A.featureTitleAnchor:active {
+	COLOR: #003366
+}
+A.featureTitleAnchor:link {
+	COLOR: #003366
+}
+A.textLink {
+	FONT-SIZE: x-small; COLOR: #003366; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.textLink:hover {
+	COLOR: #003366; TEXT-DECORATION: underline
+}
+.individualHeading {
+	FONT-WEIGHT: bold; FONT-SIZE: medium; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.individualName {
+	FONT-WEIGHT: bold; FONT-SIZE: medium; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.individualLabel {
+	FONT-WEIGHT: bold; FONT-SIZE: small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.individualData {
+	FONT-SIZE: small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.familyHeading {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.familyName {
+	FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.familyLabel {
+	FONT-WEIGHT: bold; FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.familyData {
+	FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A.pedigreeName {
+	FONT-WEIGHT: bold; FONT-SIZE: xx-small; COLOR: #003366; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+A.pedigreeName:link {
+	COLOR: #003366
+}
+A.pedigreeName:visited {
+	COLOR: #003366
+}
+A.pedigreeName:active {
+	COLOR: #003366
+}
+.pedigreeLabel {
+	FONT-SIZE: xx-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.pedigreeData {
+	FONT-SIZE: xx-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+.pedigreeNumber {
+	FONT-SIZE: xx-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A:link {
+	COLOR: #003366
+}
+A:visited {
+	COLOR: #996699
+}
+A:active {
+	COLOR: #666633
+}
+A.menuItem {
+	FONT-SIZE: x-small; COLOR: #003366; FONT-FAMILY: arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.menuItem:link {
+	COLOR: #003366; TEXT-DECORATION: none
+}
+A.menuItem:visited {
+	COLOR: #003366
+}
+A.menuItem:active {
+	COLOR: #003366
+}
+A.menuItem:hover {
+	COLOR: #003366; TEXT-DECORATION: underline
+}
+.copyrightText {
+	FONT-SIZE: xx-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
+A.copyright {
+	TEXT-DECORATION: underline
+}
+.featurestitle {
+	FONT-SIZE: large; COLOR: #666633; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: none
+}
+A.featurestitle:hover {
+	COLOR: #0066cc
+}
+.featuressubtitle {
+	FONT-SIZE: medium; COLOR: #666633; FONT-FAMILY: "Times New Roman", Times, serif; TEXT-DECORATION: none
+}
+A.featuressubtitle:hover {
+	COLOR: #0066cc
+}
+.featureslink {
+	FONT-SIZE: x-small; COLOR: #003366; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.featureslink:hover {
+	COLOR: #0066cc
+}
+.featurestext {
+	FONT-SIZE: x-small; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.featurestext:hover {
+	COLOR: #0066cc
+}
+.stepHeading1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #003366; FONT-FAMILY: verdana,arial,sans-serif; BACKGROUND-COLOR: #ccccff
+}

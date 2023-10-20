@@ -1,0 +1,387 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0069)http://www.familysearch.org/Eng/Search/banner_search.asp?navCurrent=1 -->
+<HTML><HEAD><TITLE>FamilySearch Navigation Bar - Search</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId><LINK title=BannerStyles 
+href="banner_search_files/BannerStyles.css" type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript>
+<!--
+function Translate(str){
+return str;
+}
+//-->
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+<!--
+
+  function checkCookie(){
+	var cookieName = "SSLHelp";
+	var posName = document.cookie.indexOf(escape(cookieName) + '=');
+	if (posName != -1) {
+		var posValue = posName + (escape(cookieName) + '=').length;
+		var endPos = document.cookie.indexOf(';', posValue);
+		if (endPos != -1) {
+		  cookieValue = unescape(document.cookie.substring(posValue,endPos));
+		  if (cookieValue.length > 1){
+			return cookieValue;
+		  }
+		}
+	}
+    return null;
+  }
+  
+  function openglossary() {
+    remote = open("../Search/rg/glossary/glsryidx.asp", "winglossary", "resizable,scrollbars,toolbar,width=600,height=400,left=25,top=25");
+  }
+
+  function OpenHelp()
+  {
+	var tmpCookie = checkCookie();
+	if (tmpCookie != null) {
+		helpcontent = tmpCookie;
+	}
+	else {
+		var metaElements = parent.frames['main'].document.all ?
+		parent.frames['main'].document.all.tags('META') :
+		parent.frames['main'].document.getElementsByTagName ?
+		parent.frames['main'].document.getElementsByTagName ('META') : new Array();
+   
+		var metaKeywords = new Array();
+		var i = 0;
+		for (var m = 0; m < metaElements.length; m++)
+		{
+			if (metaElements[m].name == 'HELP')
+			{
+				metaKeywords[i++] = metaElements[m].content;
+				//alert("yes inside loop"+metaElements[m].content);
+			}
+		}
+		helpcontent = metaKeywords[0];
+	}
+	//alert(" Help Content value :"+helpcontent);
+	if (helpcontent == null) //If DOM support is not available, open the default help page
+		window.open("../helps/default.asp","guide","top=25,left=25,width=600,height=400,scrollbars,toolbar,resizable");
+	else if (helpcontent.substr(0,7) == "http://") //Check for an absolute path
+		window.open(helpcontent,"guide","top=25,left=25,width=600,height=400,scrollbars,toolbar,resizable");
+	else //Open the specified help file under the helps subdirectory
+		window.open("../helps/default.asp?topic="+ helpcontent,"guide","top=25,left=25,width=600,height=400,scrollbars,toolbar,resizable");
+  }
+// -->
+</SCRIPT>
+</HEAD>
+<BODY onresize=size() bottomMargin=0 bgColor=#ffffff leftMargin=0 topMargin=0 
+onload=size() rightMargin=0 marginwidth="0" marginheight="0">
+<SCRIPT language=javascript>
+	
+  var  intLanguage;
+  arrLanguages = new Array(3);
+  intLanguage = 1;
+  arrLanguages[1] = "Languages";
+  arrLanguages[2] = "Idiomas";
+  
+  var rotatorID;
+  rotatorID = setInterval("changeLanguageText()", 2000);
+  
+  function size(){ 
+  if (document.layers){ //if Netscape
+	//document.mainlayername.pageX = document.layername.pageX;
+    //document.mainlayername.pageY = document.layername.pageY;
+	//alert('layerx = ' + document.layername.pagex + ',  layery = ' + document.layername.pagey);
+	//alert('mainx = ' + document.mainlayername.pagex + ',  mainy = ' + document.mainlayername.pagey);
+    }
+  }
+  
+  function changeLanguageText(){
+    if (intLanguage == 2){
+      intLanguage = 1;
+    }
+    else{
+      intLanguage = intLanguage + 1;
+    }
+	var linkStr = "<a href='../lang_selection.asp?color=blue' class='topBarLinks' id='languagesRotatorID' target='main'>"
+	linkStr += arrLanguages[intLanguage] + "</a>";
+
+	if (document.layers){ //if Netscape
+	//document.mainlayername.document.open();
+	//document.mainlayername.document.write(linkStr);
+	//document.mainlayername.document.close();
+	}
+	else if (document.all){ //if Internet Explorer
+	//window.languagesRotatorID.innerText = arrLanguages[intLanguage]; //works with ie
+	//document.all.layername.innerText = linkStr;   // did not work with ie
+	}
+	//document.languagesRotatorID.all = arrLanguages[intLanguage];
+  }
+</SCRIPT>
+
+<TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#003366 border=0>
+  <TBODY>
+  <TR>
+    <TD noWrap width=30><A 
+      href="http://www.familysearch.org/Eng/Redirects/RedirectCount.asp?page=http://www.lds.org" 
+      target=_top><IMG height=20 
+      alt="The Church of Jesus Christ of Latter-day Saints" 
+      src="banner_search_files/nav-small_christus.gif" width=30 border=0></A></TD>
+    <TD class=topBar width="100%" wrap><A class=topBarAnchor 
+      title="The Church of Jesus Christ of Latter-day Saints" 
+      href="http://www.familysearch.org/Eng/Redirects/RedirectCount.asp?page=http://www.lds.org" 
+      target=_top>The Church of <NOBR>Jesus Christ</NOBR> of 
+      <NOBR>Latter-day</NOBR> Saints</A></TD>
+    <TD class=topBar align=right><IMG height=20 alt="" 
+      src="banner_search_files/spacer.gif" width=8 border=0></TD>
+    <TD class=topBarDividers vAlign=center noWrap align=right><A 
+      class=topBarLinks 
+      href="http://www.familysearch.org/Eng/Policy/FSI_feedback.asp?color=blue" 
+      target=main>Feedback</A>&nbsp;| <A class=topBarLinks 
+      href="http://www.familysearch.org/Eng/Policy/FSI_sitemap.asp?color=blue" 
+      target=main>Site Map</A>&nbsp;| <A class=topBarLinks 
+      href="javascript:openglossary()">Glossary</A>&nbsp;| <A class=topBarLinks 
+      href="javascript:OpenHelp()">Help</A>&nbsp;<!--|&nbsp;--></TD><!--<td align="left" class="topBar" nowrap width="75"><a href="../lang_selection.asp?color=blue" class="topBarLinks" id="languagesRotatorID" target="main">Languages</a>&nbsp;</td>--></TR></TBODY></TABLE><!--START TAB BAR...-->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff border=0>
+  <TBODY>
+  <TR vAlign=bottom>
+    <TD vAlign=bottom align=middle width="50%">
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=middle height=40><A 
+            href="http://www.familysearch.org/Eng/default.asp" target=_top><IMG 
+            alt="Go to FamilySearch Internet Home page" 
+            src="banner_search_files/figs_logo.gif" 
+      border=0></A></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+      background=banner_search_files/bg-N1.gif border=0>
+        <TBODY>
+        <TR>
+          <TD><IMG height=2 src="banner_search_files/spacer.gif" 
+        width=8></TD></TR></TBODY></TABLE></TD>
+    <TD align=middle width="1%"><!-- START TABS -->
+      <TABLE cellSpacing=0 cellPadding=0 border=0>
+        <TBODY>
+        <TR><!--copy this cell to create a gray tab...-->
+          <TD vAlign=bottom>
+            <TABLE cellSpacing=0 cellPadding=0 bgColor=#cccc99 border=0>
+              <TBODY>
+              <TR>
+                <TD width=4><IMG height=4 alt="" 
+                  src="banner_search_files/NW0.gif" width=4></TD>
+                <TD background=banner_search_files/bg-N0.gif><IMG height=4 
+                  alt="" src="banner_search_files/spacer.gif" width=8></TD>
+                <TD width=4><IMG height=4 alt="" 
+                  src="banner_search_files/NE0.gif" width=4></TD></TR>
+              <TR>
+                <TD background=banner_search_files/bg-W0.gif><IMG height=4 
+                  alt="" src="banner_search_files/spacer.gif" width=4></TD>
+                <TD align=middle>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><IMG height=8 alt="" 
+                        src="banner_search_files/spacer.gif" width=2></TD>
+                      <TD class=tabText align=middle height=22><A 
+                        class=TabInactive title="Go to Home Options" 
+                        href="http://www.familysearch.org/Eng/default.asp" 
+                        target=_top>HOME</A></TD>
+                      <TD><IMG height=8 alt="" 
+                        src="banner_search_files/spacer.gif" 
+                    width=2></TD></TR></TBODY></TABLE></TD>
+                <TD background=banner_search_files/bg-E0.gif><IMG height=4 
+                  alt="" src="banner_search_files/spacer.gif" width=4></TD></TR>
+              <TR>
+                <TD background=banner_search_files/bg-N1.gif><IMG height=2 
+                  alt="" src="banner_search_files/spacer.gif" width=4></TD>
+                <TD background=banner_search_files/bg-N1.gif><IMG height=2 
+                  alt="" src="banner_search_files/spacer.gif" width=8></TD>
+                <TD background=banner_search_files/bg-N1.gif><IMG height=2 
+                  alt="" src="banner_search_files/spacer.gif" 
+              width=4></TD></TR></TBODY></TABLE></TD><!--end of gray tab--><!--copy this cell to create an ACTIVE tab...-->
+          <TD vAlign=bottom>
+            <TABLE cellSpacing=0 cellPadding=0 bgColor=#336699 border=0>
+              <TBODY>
+              <TR>
+                <TD width=4><IMG height=4 alt="" 
+                  src="banner_search_files/NW1.gif" width=4></TD>
+                <TD background=banner_search_files/bg-N1.gif><IMG height=4 
+                  alt="" src="banner_search_files/spacer.gif" width=8></TD>
+                <TD width=4><IMG height=4 alt="" 
+                  src="banner_search_files/NE1.gif" width=4></TD></TR>
+              <TR>
+                <TD background=banner_search_files/bg-W1.gif><IMG height=4 
+                  alt="" src="banner_search_files/spacer.gif" width=4></TD>
+                <TD vAlign=top>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><IMG height=8 alt="" 
+                        src="banner_search_files/spacer.gif" width=2></TD>
+                      <TD class=tabText align=middle height=22><A 
+                        class=TabActive title="Go to Search Options" 
+                        href="http://www.familysearch.org/Eng/Search/frameset_search.asp" 
+                        target=_top>SEARCH</A></TD>
+                      <TD><IMG height=8 alt="" 
+                        src="banner_search_files/spacer.gif" 
+                    width=2></TD></TR></TBODY></TABLE></TD>
+                <TD background=banner_search_files/bg-E1.gif><IMG height=4 
+                  alt="" src="banner_search_files/spacer.gif" width=4></TD></TR>
+              <TR>
+                <TD><IMG height=2 alt="" src="banner_search_files/SW1.gif" 
+                  width=4></TD>
+                <TD><IMG height=2 alt="" src="banner_search_files/spacer.gif" 
+                  width=8></TD>
+                <TD><IMG height=2 alt="" src="banner_search_files/SE1.gif" 
+                  width=4></TD></TR></TBODY></TABLE></TD><!--end of ACTIVE tab--><!--copy this cell to create a gray tab...-->
+          <TD vAlign=bottom>
+            <TABLE cellSpacing=0 cellPadding=0 bgColor=#cccc99 border=0>
+              <TBODY>
+              <TR>
+                <TD width=4><IMG height=4 alt="" 
+                  src="banner_search_files/NW0.gif" width=4></TD>
+                <TD background=banner_search_files/bg-N0.gif><IMG height=4 
+                  alt="" src="banner_search_files/spacer.gif" width=8></TD>
+                <TD width=4><IMG height=4 alt="" 
+                  src="banner_search_files/NE0.gif" width=4></TD></TR>
+              <TR>
+                <TD background=banner_search_files/bg-W0.gif><IMG height=4 
+                  alt="" src="banner_search_files/spacer.gif" width=4></TD>
+                <TD align=middle>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><IMG height=8 alt="" 
+                        src="banner_search_files/spacer.gif" width=2></TD>
+                      <TD class=tabText align=middle height=22><A 
+                        class=TabInactive title="Go to Share Options" 
+                        href="http://www.familysearch.org/Eng/Share/Preserve/frameset_preserve.asp" 
+                        target=_top>SHARE</A></TD>
+                      <TD><IMG height=8 alt="" 
+                        src="banner_search_files/spacer.gif" 
+                    width=2></TD></TR></TBODY></TABLE></TD>
+                <TD background=banner_search_files/bg-E0.gif><IMG height=4 
+                  alt="" src="banner_search_files/spacer.gif" width=4></TD></TR>
+              <TR>
+                <TD background=banner_search_files/bg-N1.gif><IMG height=2 
+                  alt="" src="banner_search_files/spacer.gif" width=4></TD>
+                <TD background=banner_search_files/bg-N1.gif><IMG height=2 
+                  alt="" src="banner_search_files/spacer.gif" width=8></TD>
+                <TD background=banner_search_files/bg-N1.gif><IMG height=2 
+                  alt="" src="banner_search_files/spacer.gif" 
+              width=4></TD></TR></TBODY></TABLE></TD><!--end of gray tab--><!--copy this cell to create a gray tab...-->
+          <TD vAlign=bottom>
+            <TABLE cellSpacing=0 cellPadding=0 bgColor=#cccc99 border=0>
+              <TBODY>
+              <TR>
+                <TD width=4><IMG height=4 alt="" 
+                  src="banner_search_files/NW0.gif" width=4></TD>
+                <TD background=banner_search_files/bg-N0.gif><IMG height=4 
+                  alt="" src="banner_search_files/spacer.gif" width=8></TD>
+                <TD width=4><IMG height=4 alt="" 
+                  src="banner_search_files/NE0.gif" width=4></TD></TR>
+              <TR>
+                <TD background=banner_search_files/bg-W0.gif><IMG height=4 
+                  alt="" src="banner_search_files/spacer.gif" width=4></TD>
+                <TD align=middle>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><IMG height=8 alt="" 
+                        src="banner_search_files/spacer.gif" width=2></TD>
+                      <TD class=tabText align=middle height=22><A 
+                        class=TabInactive 
+                        title="Go to Family History Library System Options" 
+                        href="http://www.familysearch.org/Eng/Library/FHL/frameset_library.asp" 
+                        target=_top>LIBRARY</A></TD>
+                      <TD><IMG height=8 alt="" 
+                        src="banner_search_files/spacer.gif" 
+                    width=2></TD></TR></TBODY></TABLE></TD>
+                <TD background=banner_search_files/bg-E0.gif><IMG height=4 
+                  alt="" src="banner_search_files/spacer.gif" width=4></TD></TR>
+              <TR>
+                <TD background=banner_search_files/bg-N1.gif><IMG height=2 
+                  alt="" src="banner_search_files/spacer.gif" width=4></TD>
+                <TD background=banner_search_files/bg-N1.gif><IMG height=2 
+                  alt="" src="banner_search_files/spacer.gif" width=8></TD>
+                <TD background=banner_search_files/bg-N1.gif><IMG height=2 
+                  alt="" src="banner_search_files/spacer.gif" 
+              width=4></TD></TR></TBODY></TABLE></TD><!--end of gray tab--></TR></TBODY></TABLE></TD>
+    <TD align=middle width="50%">
+      <TABLE cellSpacing=0 cellPadding=3 border=0>
+        <TBODY>
+        <TR>
+          <TD class=headerText vAlign=bottom noWrap align=middle></TD></TR>
+        <TR>
+          <TD class=globalLinks vAlign=bottom noWrap align=middle><A 
+            class=globalAnchor 
+            title="Check information you may have submitted to FamilySearch" 
+            href="http://www.familysearch.org/Eng/Login/FSI_my_info.asp?color=blue" 
+            target=main>My Info</A> | <A class=globalAnchor 
+            title="Sign on to FamilySearch Internet" 
+            href="https://www.familysearch.org/ENG/Login/signon.asp?pagename=http://www.familysearch.org/ENG/search/search_all1.asp&amp;color=blue" 
+            target=main>Sign On</A> </TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+      background=banner_search_files/bg-N1.gif border=0>
+        <TBODY>
+        <TR>
+          <TD><IMG height=2 alt="" src="banner_search_files/spacer.gif" 
+            width=8></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!--end of tabs row--><!--start of tab base-->
+<TABLE cellSpacing=0 cellPadding=3 width="100%" bgColor=#336699 border=0>
+  <TBODY>
+  <TR vAlign=top align=middle>
+    <TD width="100%">
+      <TABLE cellSpacing=0 cellPadding=0 border=0>
+        <TBODY>
+        <TR><!--current section-->
+          <TD><IMG height=30 alt="" src="banner_search_files/spacer.gif" 
+            width=8></TD>
+          <TD vAlign=center noWrap align=middle><A class=navBarCurrent 
+            id=navWelcome 
+            href="http://www.familysearch.org/Eng/Search/frameset_search.asp" 
+            target=_top>Search for<BR>Ancestors</A></TD>
+          <TD><IMG height=8 alt="" src="banner_search_files/spacer.gif" 
+            width=8></TD><!--white divider-->
+          <TD><IMG height=16 alt="" src="banner_search_files/bck_tan.gif" 
+            width=1></TD><!--other section-->
+          <TD><IMG height=8 alt="" src="banner_search_files/spacer.gif" 
+            width=8></TD>
+          <TD vAlign=center noWrap align=middle><A class=navBarAnchor 
+            id=navNews 
+            href="http://www.familysearch.org/Eng/Search/RG/frameset_rg.asp" 
+            target=_top>Research<BR>Guidance</A></TD>
+          <TD><IMG height=8 alt="" src="banner_search_files/spacer.gif" 
+            width=8></TD><!--white divider-->
+          <TD><IMG height=16 alt="" src="banner_search_files/bck_tan.gif" 
+            width=1></TD><!--other section-->
+          <TD><IMG height=8 alt="" src="banner_search_files/spacer.gif" 
+            width=8></TD>
+          <TD vAlign=center noWrap align=middle><A class=navBarAnchor 
+            id=navNews 
+            href="http://www.familysearch.org/Eng/Search/RG/frameset_rhelps.asp" 
+            target=_top>Research<BR>Helps</A></TD>
+          <TD><IMG height=8 alt="" src="banner_search_files/spacer.gif" 
+            width=8></TD><!--white divider-->
+          <TD><IMG height=16 alt="" src="banner_search_files/bck_tan.gif" 
+            width=1></TD><!--other section-->
+          <TD><IMG height=8 alt="" src="banner_search_files/spacer.gif" 
+            width=8></TD>
+          <TD vAlign=center noWrap align=middle><A class=navBarAnchor 
+            id=navFAQs 
+            href="http://www.familysearch.org/Eng/Search/WebSites/frameset_websites.asp" 
+            target=_top>Web<BR>Sites</A></TD>
+          <TD><IMG height=8 alt="" src="banner_search_files/spacer.gif" 
+            width=8></TD><!--white divider-->
+          <TD><IMG height=16 alt="" src="banner_search_files/bck_tan.gif" 
+            width=1></TD><!--other section-->
+          <TD><IMG height=8 alt="" src="banner_search_files/spacer.gif" 
+            width=8></TD>
+          <TD vAlign=center noWrap align=middle><A class=navBarAnchor 
+            id=navDownload 
+            href="http://www.familysearch.org/Eng/Library/FHLC/frameset_fhlc.asp" 
+            target=_top>Family History<BR>Library Catalog</A></TD>
+          <TD><IMG height=8 alt="" src="banner_search_files/spacer.gif" 
+            width=8></TD><!--Family History for Kids                <td bgcolor="#FFFFFF"><img src="images/spacer.gif" width="1" height="8" alt=""></td>                <td><img src="images/spacer.gif" width="8" height="8" alt=""></td>                <td align="center" valign="middle"><a class="navBarAnchor" href="#">                  Family History<br>                  for Kids</a></td>                <td><img src="images/spacer.gif" width="8" height="8" alt=""></td>--></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#003366 border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <TD width="100%"><IMG height=4 alt="" src="banner_search_files/spacer.gif" 
+      width=8></TD></TR></TBODY></TABLE><!--end of tab base--></BODY></HTML>

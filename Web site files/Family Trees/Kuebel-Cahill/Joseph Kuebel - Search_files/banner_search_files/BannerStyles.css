@@ -1,0 +1,57 @@
+.sampleStyle {
+	FONT-SIZE: 8pt
+}
+.topBarDividers {
+	FONT-SIZE: 8pt; COLOR: #cccc99; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+.topBarLinks {
+	FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+A.topBarLinks {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.topBarLinks:hover {
+	TEXT-DECORATION: underline
+}
+A.navBarAnchor {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: white; LINE-HEIGHT: 9pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+A.navBarAnchor:hover {
+	FONT-WEIGHT: bold; COLOR: white; TEXT-DECORATION: underline
+}
+A.navBarCurrent {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffff66; LINE-HEIGHT: 9pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif; TEXT-DECORATION: none
+}
+.topBar {
+	FONT-SIZE: 8pt; COLOR: #ffffff; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+A.topBarAnchor {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.topBarAnchor:hover {
+	TEXT-DECORATION: underline
+}
+.tabText {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; LINE-HEIGHT: 8pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+A.TabActive {
+	COLOR: #ffff66; TEXT-DECORATION: none
+}
+A.TabInactive {
+	COLOR: #333300; TEXT-DECORATION: none
+}
+A.TabInactive:hover {
+	COLOR: #333300; TEXT-DECORATION: underline
+}
+.globalLinks {
+	FONT-SIZE: 8pt; COLOR: #003366; LINE-HEIGHT: 10pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif
+}
+A.globalAnchor {
+	FONT-SIZE: 8pt; COLOR: #003366; TEXT-DECORATION: none
+}
+A.globalAnchor:hover {
+	COLOR: #003366; TEXT-DECORATION: underline
+}
+.headerText {
+	FONT-SIZE: x-small; FONT-FAMILY: arial,helvetica,sans-serif
+}
