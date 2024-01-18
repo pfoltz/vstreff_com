@@ -13,6 +13,14 @@ Off-white     #f6f6f6
 /* 
   https://www.paulirish.com/2012/box-sizing-border-box-ftw/
 */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* set default to 10px */
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 /* LINKS */
 /* a {
     color: #3c8453;
@@ -26,10 +34,10 @@ a:hover {
 }
 footer a:hover {
     color: #3c8453;
-}
+}*/
 .btn {
-    background: #3c8453;
-    color: #f6f6f6;
+    background: #fff;
+    color: #000;
     text-decoration: none;
     text-transform: uppercase;
     font-size:1.2rem;
@@ -38,7 +46,7 @@ footer a:hover {
     letter-spacing: 0.1em;
     line-height: 1;
     border-radius: 4px; /* the higher the number, the rounder the corners */
-/*} */
+}
 
 /* .content-wrapper {
     margin: 0 auto;
@@ -52,12 +60,15 @@ footer a:hover {
     background-size: cover;
     color: "#000000";
     text-decoration: "#000000";
-      /* LINK: "#000000;
-      VLINK: "#000000";
-       ALINK: "#FFFFFF" */
-    /* display: flex;
-    flex-direction: column; */
+}.home_button {
+box-sizing: border-box;
+border-style: double;
+font-weight: bold;
+width: 100px;
+height: 30px;
+
 }
+
 .welcome_title h2 {
     font-family: "engravers mt";
     color: #ffff00;
@@ -94,15 +105,75 @@ footer a:hover {
         padding: 20px;
     }
 } */
-/* RESUME
+/* FAMILY PICTURE ALBUM
 ---------------------------------*/
-/* .resume header::before {
-    background: url(../images/bg-home-office-studio.jpg) center;
-    background-size: cover;
-    content: "";
-    display: block;
-    height: 375px;
+.album_page {
+    background-image:url(../Images/9.jpg);
 }
+.album_title {
+    box-sizing: border-box;            
+    border-style: double;
+    width: 250px;
+    height: 50px;
+    padding: 2px 30px 3px;
+    background-image: url(../Images/Backgrounds/GenuineLeather_Bkg.jpg) ;
+    font-family: "EngrvrsOldEngBd BT";
+    font-weight: normal;
+    font-size: xx-large;
+    color: rgb(255, 214, 0);
+  }
+.wedding_links {
+    padding: 5px;
+    box-sizing: border-box;
+    width: 200px;
+    box-sizing: border-box;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.wedding_button {
+    box-sizing: border-box;
+    border-style: single;
+    margin-bottom: 5px;
+    background-color: yellow;
+    width: 150px;
+    padding: 1px;
+}
+.nathan_links {
+    padding: 5px;
+    box-sizing: border-box;
+    width: 200px;
+    box-sizing: border-box;
+    background-color: #ff0000;
+    margin-bottom: 10px;
+}
+.nathan_button {
+    box-sizing: border-box;
+    border-style: single;
+    margin-bottom: 5px;
+    background-color: #ff8000;
+    border-color: #ffff00;
+    width: 150px;
+    padding: 1px;
+}
+.video_links {
+    padding: 5px;
+    box-sizing: border-box;
+    width: 200px;
+    box-sizing: border-box;
+    background-color: #008080;
+    margin-bottom: 10px;
+}
+.video_button {
+    box-sizing: border-box;
+    border-style: single;
+    margin-bottom: 5px;
+    background-color: #ff8000;
+    border-color: blue;
+    width: 150px;
+    padding: 1px;
+}
+
+/*
 .resume-section {
     margin-bottom: 50px;
 }

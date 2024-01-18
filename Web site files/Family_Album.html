@@ -1,72 +1,106 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
-<!--  Created with the CoffeeCup HTML Editor 2005  -->
-<!--           http://www.coffeecup.com/           -->
-<!--        Brewed on 10/22/2005 8:35:46 PM        -->
-<head>
-  <title>Family Album</title>
-</head>
-<BODY BACKGROUND="Images/9.jpg" BGCOLOR="000000" TEXT="#FFFFFF" LINK="#FFFF00" VLINK="#FFFF00" ALINK="#FFFFFF">
-
-<TABLE WIDTH="250" ALIGN="CENTER" BORDER="2" BORDERCOLOR="#FFD600" CELLSPACING="2" CELLPADDING="1" 
-BACKGROUND="Images/Backgrounds/GenuineLeather_Bkg.jpg" width="300" height="50"  >
-  <tr><br />
-  <TD WIDTH="300" ALIGN="CENTER" VALIGN="CENTER">
- <center><font size="6" color="#FFD600"><font face="Copperplate Gothic Bold"><font face="EngrvrsOldEng Bd BT">Family Album</font></font></font>
-  </td>
-  </tr>
-</table><br />
-<TABLE WIDTH="200" ALIGN="CENTER" BORDER="" CELLSPACING="5" CELLPADDING="1" BGCOLOR="white" bordercolor= "">
-  <tr> 
-  	<TD WIDTH="50" ALIGN="CENTER" VALIGN="TOP"> <!-- col 1 -->
-	   	<button style="background-color: yellow;  width=300; " onClick="window.location = 'OurWedding.html'">Our Wedding 8/8/1959</button>  
- 	</TD>
-	</tr><tr>
-    <td> 
-  	   	<button style="background-color: yellow;  width=300; " onClick="window.location = 'Kate-PM Wedding.html'">Kate & Paul Michael Wedding 5/15/2004</button> 
-  </td>
-	</tr>
-	<tr>
-	<td "center"> <a href="scott-amy"><font color="#000000"><div align="center">Scott & Amy Wedding</div></font></a>	</td>
-	</tr>
-	<tr>
-    <td> 
-  	   	<button style="background-color: yellow;  width=300; " onClick="window.location = 'Paul-Amanda Wedding.html'">Paul & Amanda Wedding 8/28/2011</button> 
-  </td>
-
-	</tr>
-</table><br />  
- 
-<TABLE WIDTH="200" ALIGN="CENTER" BORDER="0" CELLSPACING="5" CELLPADDING="1" BGCOLOR="#FF0000" bordercolor= "#FFFF00">
-     <TD WIDTH="50" ALIGN="CENTER" ><button style="background-color: #FF8000; border-color: #FFFF00; width=200; " onClick="window.location = 'Nathan.html'"><font color="#000000">Nathan - the First Year</font></button> </TD>
-	</tr>
-	<tr>
-	     <TD WIDTH="50" ALIGN="CENTER" ><button style="background-color: #FF8000; border-color: #FFFF00; width=200; " onClick="window.location = '2006-2007.html'"><font color="#000000">2006 - 2007</font></button> </TD>
-	</tr>
-	<tr>
-		     <TD WIDTH="50" ALIGN="CENTER" ><button style="background-color: #FF8000; border-color: #FFFF00; width=200; " onClick="window.location = '2008-2009.html'"><font color="#000000">2008 - 2009</font></button> </TD>
-	</tr>
-	<tr>
-		     <TD WIDTH="50" ALIGN="CENTER" ><button style="background-color: #FF8000; border-color: #FFFF00; width=200; " onClick="window.location = '2010.html'"><font color="#000000">2010</font></button> </TD>
-	</tr>
-</table><br />
-<TABLE WIDTH="200" ALIGN="CENTER" BORDER="0" CELLSPACING="5" CELLPADDING="1" BGCOLOR="#008080" bordercolor= "#FFD600">
-   <tr>
-     <TD WIDTH="50" ALIGN="CENTER" ><button style="background-color: #FF8000; border-color: blue; width=200; " onClick="window.location = 'slideshows.html'"><font color="#000000">Slide Shows</font></button> </TD>
-	</tr><tr>
-     <TD WIDTH="50" ALIGN="CENTER" ><button style="background-color: #FF8000; border-color: blue; width=200; " onClick="window.location = 'videos.html'"><font color="#000000">Family Videos</font></button> </TD>
-	</tr><tr>
-     <TD WIDTH="50" ALIGN="CENTER" ><button style="background-color: #FF8000; border-color: blue; width=200; " onClick="window.location = '8mmMovies.html'"><font color="#000000">8MM Home Movies</font></button> </TD>
-	</tr>
-</table>
-<table ALIGN="CENTER">
-  <tr><td> </td> 
-  <td> <center> <input style="FONT-WEIGHT: bold; WIDTH: 80px; COLOR: #000000; HEIGHT: 30px; 
-  BACKGROUND-COLOR: #FFFFFF" onclick="window.location.href='index.html';" type="button" size="19" value="RETURN">
-</form></center></td>
->
-    </tr>
- </center></table>
-</body>
+  <!--  Created with the CoffeeCup HTML Editor 2005  -->
+  <!--           http://www.coffeecup.com/           -->
+  <!--        Brewed on 10/22/2005 8:35:46 PM        -->
+  <!-- Modified with great care on 18-Jan-2024       -->
+  <head>
+    <title>Family Picture Album</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="album_page">
+    <br />
+    <br />
+    <center>
+      <span class="album_title">Family Album</span>
+    </center>
+    <br />
+    <br />
+    <center>
+      <div class="wedding_links">
+        <button
+          id="btnOurWedding"
+          class="wedding_button"
+          onClick="window.location = 'OurWedding.html'"
+        >
+          Our Wedding 8/8/1959
+        </button>
+        <button
+          id="katePMWedding"
+          class="wedding_button"
+          onClick="window.location = 'Kate-PM Wedding.html'"
+        >
+          Kate & Paul Michael Wedding 5/15/2004
+        </button>
+        <button
+          id="scottAmyWedding"
+          class="wedding_button"
+          onClick="window.location = 'scott-amy.html'"
+        >
+          Scott & Amy Wedding
+        </button>
+        <!-- <button id="paulAmandaWedding" class="wedding_button" onClick="window.location = 'Paul-Amanda Wedding.html'">Paul & Amanda Wedding 8/28/2011</button> -->
+      </div>
+      <div class="nathan_links">
+        <button
+          id="btnNathanFirstYear"
+          class="nathan_button"
+          onClick="window.location = 'Nathan.html'"
+        >
+          Nathan - the First Year
+        </button>
+        <button
+          id="btnNathanToddlerYears"
+          class="nathan_button"
+          onClick="window.location = '2006-2007.html'"
+        >
+          2006 - 2007
+        </button>
+        <button
+          id="btnNathanPreschoolYears"
+          class="nathan_button"
+          onClick="window.location = '2008-2009.html'"
+        >
+          2008 - 2009
+        </button>
+        <button
+          id="btnNathan2010"
+          class="nathan_button"
+          onClick="window.location = '2010.html'"
+        >
+          2010
+        </button>
+      </div>
+      <div class="video_links">
+        <button
+          id="btnSlideShows"
+          class="video_button"
+          onClick="window.location = 'slideshows.html'"
+        >
+          Slide Shows
+        </button>
+        <button
+          id="btnFamilyVideos"
+          class="video_button"
+          onClick="window.location = 'videos.html'"
+        >
+          Family Videos
+        </button>
+        <button
+          id="btn8mmHomeMovies"
+          class="video_button"
+          onClick="window.location = '8mmMovies.html'"
+        >
+          8MM Home Movies
+        </button>
+      </div>
+      <button
+        id="btnHome"
+        class="home_button"
+        onClick="window.location = 'index.html'"
+      >
+        HOME
+      </button>
+    </center>
+  </body>
 </html>
-
