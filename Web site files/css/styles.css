@@ -60,15 +60,15 @@ footer a:hover {
     background-size: cover;
     color: "#000000";
     text-decoration: "#000000";
-}.home_button {
+}
+.home_button {
+cursor: pointer;
 box-sizing: border-box;
 border-style: double;
 font-weight: bold;
 width: 100px;
 height: 30px;
-
 }
-
 .welcome_title h2 {
     font-family: "engravers mt";
     color: #ffff00;
@@ -131,6 +131,7 @@ height: 30px;
     margin-bottom: 10px;
 }
 .wedding_button {
+    cursor: pointer;
     box-sizing: border-box;
     border-style: single;
     margin-bottom: 5px;
@@ -147,6 +148,7 @@ height: 30px;
     margin-bottom: 10px;
 }
 .nathan_button {
+    cursor: pointer;
     box-sizing: border-box;
     border-style: single;
     margin-bottom: 5px;
@@ -164,6 +166,7 @@ height: 30px;
     margin-bottom: 10px;
 }
 .video_button {
+    cursor: pointer;
     box-sizing: border-box;
     border-style: single;
     margin-bottom: 5px;
@@ -172,7 +175,124 @@ height: 30px;
     width: 150px;
     padding: 1px;
 }
-
+/* FAMILY HERITAGE
+---------------------------------*/
+.genealogy_page {
+    background-color: #6699CC;
+    margin: 0;
+    color: #0000cc;
+}
+a:hover {
+    color: red;
+}
+a:link {
+    color: dark brown;
+}
+a:visited {
+    color: dark blue;
+}
+.header_color1 {
+    background-color: #0066FF;
+    width: 5;
+}
+.header_color2 {
+    background-color: #0000FF;
+    width: 5;
+}
+.header_color3 {
+    background-color: #0000CC;
+    width: 5;
+}
+.header_color4 {
+    background-color: #000099;
+    width: 5;
+}
+.header_title_color {
+    background-color: #000066;
+    width: 98%;
+    color: #ffffff;
+}
+.header_title1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: xx-large;
+}
+.header_title2 {
+    font-weight: bold;
+    font-size: x-large;
+}
+.banner_color1 {
+    background-color: #0066FF;
+    width: 5;
+    height: 5;
+}
+.banner_color2 {
+    background-color: #0000FF;
+    width: 5;
+    height: 5;
+}
+.banner_color3 {
+    background-color: #0000CC;
+    width: 5;
+    height: 5;
+}
+.banner_color4 {
+    background-color: #000099;
+    width: 5;
+    height: 5;
+}
+.base_color1 {
+    background-color: #0066FF;
+    height: 5;
+}
+.base_color2 {
+    background-color: #0000FF;
+    height: 5;
+}
+.base_color3 {
+    background-color: #0000CC;
+    height: 5;
+}
+.base_color4 {
+    background-color: #000099;
+    height: 5;
+}
+.spacer_size {
+    width: 1;
+    height: 1;
+}
+.genealogy_button {
+    cursor: pointer;
+    background-color: #ffff00;
+    color: #0000cc;
+    border-color: #9e9e9e;
+    font-size: 12pt;
+    font: bold;
+    margin-right: 5;
+}
+.genealogy_link {
+    font-size: 14pt;
+    font-weight: bold;
+}
+.genealogy_headings {
+    font-size: 14pt;
+    color: black;
+}
+.page_count {
+    font-size: 14pt;
+    color: black;
+    padding-left: 20;
+}
+.luxembourg_button {
+    cursor: pointer;
+    background-color: #00ff00;
+    color: #0000cc;
+    border-color: #9e9e9e;
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 10;
+}
 /*
 .resume-section {
     margin-bottom: 50px;
