@@ -22,19 +22,10 @@ html {
   }
 
 /* LINKS */
-/* a {
-    color: #3c8453;
-} */
 a:hover {
     color: red;
     text-decoration: none;
 }
-/* footer a {
-    color: #bcaa96;
-}
-footer a:hover {
-    color: #3c8453;
-}*/
 .btn {
     background: #fff;
     color: #000;
@@ -48,11 +39,6 @@ footer a:hover {
     border-radius: 4px; /* the higher the number, the rounder the corners */
 }
 
-/* .content-wrapper {
-    margin: 0 auto;
-    padding: 30px;
-    max-width: 900px;
-} */
 /* HOME
 ---------------------------------*/
 .home {
@@ -80,6 +66,7 @@ height: 30px;
 .home_links {
     font-family: "verdana";
     font-weight: bold;
+    font-size: 20px;
     padding: 20px;
   }
 .contacts {
@@ -90,21 +77,6 @@ height: 30px;
     right: 20px;
   }
   
-/* .home .content-wrapper {
-    flex: 1 0 auto;
-}
-.content-bg {
-    background: rgb(255 255 255 / 0.9);
-    padding: 30px;
-}
-@media screen and (max-width:650px) {
-    .home .content-wrapper {
-        padding: 10px;
-    }
-    .content-bg {
-        padding: 20px;
-    }
-} */
 /* FAMILY PICTURE ALBUM
 ---------------------------------*/
 .album_page {
@@ -293,127 +265,38 @@ a:visited {
     font-weight: bold;
     margin: 10;
 }
-/*
-.resume-section {
-    margin-bottom: 50px;
-}
-.resume-section h2 {
-    border-bottom: 2px dashed #d3d4d6;
-}
-.download-link {
-    position: fixed;
-    top: 5px;
-    left: 5px;
-    font-size: 1.5rem;
-}
-@media screen and (max-width:1200px) {
-    .download-link {
-        position: absolute;
-    }
-}
-@media screen and (max-width:500px) {
-    .resume header::before {
-        height: 200px;
-    }
-    h1 {
-        font-size: 5rem;
-    }
-    h2 {
-        font-size: 2.6rem;
-    }
-} */
-/* Projects
+/* FAMILY VACATION
 ---------------------------------*/
-/* .project-item {
-    margin: 30px 0;
-}
-.project-item img {
-    width: 300px;
-}
-
-@media screen and (min-width: 860px) {
-    .project-item {
-        display: flow-root;
-    }
-    .project-item img {
-        float: left;
-        margin-right: 20px;
-    }
-}
-@media screen and (min-width:650px ) and (max-width: 859px) {
-    .project-wrapper {
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
-    }
-    .project-item img {
-        width: 100%;
-    }
-}
-@media screen and (max-width:500px) {
-    .project-item img {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-} */
-/* Work Experience
----------------------------------*/
-/* .work-item {
-    margin: 30px 0;
-}
-.work-details p {
+.travel_page {
+    background-color: #008040;
+    color: #0000ff;
     margin: 0;
 }
-@media screen and (min-width:860px) {
-    .work-item {
-        display:grid;
-        grid-template-columns: 300px 1fr;
-        column-gap: 20px;
-    }
-    .work-summary p:first-child {
-        margin-top: 0;
-    }
-} */
-/* Education
----------------------------------*/
-/* .education-item {
-    margin: 30px 0;
+.travel_header {
+    color: #ff0000;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+    border-style: double;
+    border-color: #000000;
+    background-color: #80ffff;
+    padding: 5;
+    width: 300;
+    height: 50;
+    margin: 10;
 }
-.education-item p {
-    margin: 0;
-} */
-/* FOOTER
----------------------------------*/
-/* footer {
-    background: #222;
-    color: #d3d4d6;
+.travel_button {
+    cursor: pointer;
+    background-color: yellow;
+    border-color: blue;
+    margin: 5;
 }
-
-.socials {
-    list-style-type: none;
-    padding: 0;
+travel_table {
+    width: 600;
+    margin: auto;
 }
-.socials li {
-    display: inline-block;
-    margin-left: 10px;
+travel_detail {
+    width: 200;
+    align-items: center;
+    vertical-align: top;
 }
-.socials img {
-    width: 30px;
-}
-.socials img:hover {
-    opacity: 0.5;
-}
-
-@media screen and (min-width: 860px) {
-    footer {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 20px;
-    }
-}
-@media screen and (max-width: 859px) {
-    footer {
-        text-align: center;
-        padding: 10px;
-    }
-} */
