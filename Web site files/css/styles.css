@@ -300,3 +300,46 @@ travel_detail {
     align-items: center;
     vertical-align: top;
 }
+/* MISCELLANY
+---------------------------------*/
+.misc_page {
+    background-color: #ffff80;
+    color: #ffffff;
+    margin: 0;
+}
+.misc_header {
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+    border-style: outset;
+    border-color: gray;
+    border-width: 4;
+    background-color: #000066;
+    padding: 6;
+    width: 50%;
+    margin: 10;
+}
+.misc_link {
+    cursor: pointer;
+    color: blue;
+    font-size: large;
+    font-weight: bold;
+    margin: 5;
+}
+.misc_table {
+    width: 800;
+    margin: auto;
+}
+.misc_subheader {
+    color:#000;
+    font-size: large;
+    font-style: italic;
+    font-weight:bold;
+}
+.misc_detail {
+    width: 200;
+    align-items: center;
+    vertical-align: top;
+}
