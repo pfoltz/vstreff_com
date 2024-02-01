@@ -343,3 +343,30 @@ travel_detail {
     align-items: center;
     vertical-align: top;
 }
+/* SKETCHES BY STREFF */
+.sjs_home {
+    background: url(../Images/Backgrounds/33.jpg);
+    color: "#000000";
+}
+.sjs_title h2 {
+    font-family: "engravers mt";
+    color: #ffff00;
+    font-weight: bold;
+    font-size: x-large;
+}
+.sjs_image {
+    margin-top: 20px;
+    width: 88;
+    height: 104;
+}
+.sjs_links {
+    font-weight: bold;
+    font-size: x-large;
+  }
+.sjs_contacts {
+    color: #ffd600;
+    font-size: large;
+  }
+.sjs_email {
+    font-size: large;
+}
